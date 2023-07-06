@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  my-web-app:
+    container_name: "jovian-career-website"
+    image: iamamash/find-my-movie:latest
+    ports:
+      - 8000:8000
+    volumes:
+      - jovian-career-website-volume:/app
+
+volumes:
+  jovian-career-website-volume:
